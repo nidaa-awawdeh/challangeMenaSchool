@@ -9,8 +9,33 @@ exp
  */
 
 function reverseNestedArray(array) {
-    //TODO
-}
+
+    for ( var i=array.length-1; i>=0 ;i--){
+    
+
+       if (Array.isArray(array[i])) {
+         
+       
+          var d= array[i].reverse() ;
+         
+    
+            return d  ;
+
+        //  Illegal return statement error
+       }
+     
+
+       else {
+          return array.reverse();
+       }
+       
+    } }
+
+
+     reverseNestedArray([1,4,5,[6,7,8]])
+
+
+
 
 
 module.exports = reverseNestedArray;
