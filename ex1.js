@@ -29,7 +29,10 @@ function reverseNestedArray(array) {
           return array.reverse();
        }
        
-    } }
+    }
+}
+    
+    //  what is js reverse nested array
 
 
      reverseNestedArray([1,4,5,[6,7,8]])
